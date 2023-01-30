@@ -1,0 +1,292 @@
+body {
+    background: 
+        linear-gradient(125deg, #000000 0%,
+                                #7e7e7e 50%, 
+                                #000000 100%);
+    color: #ffffff;
+}
+
+    #header {
+        height: 90vh;
+        position: relative;
+        text-align: center;
+        background-image: url(https://wallpapercave.com/wp/wp5997701.png);   
+        background-repeat: round;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+        #greeting {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 90vh;
+        }
+
+            #myFace {
+                border-radius: 50%;
+                width: 230px;
+            }
+
+            #greetingTXT {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+                #bounce {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    gap: 1rem;
+                }
+            
+                    .letter {
+                        animation: bounce 0.75s ease infinite alternate;
+                        display: inline-block;
+                        text-shadow: #7e7e7e 0 0 0.05em;
+                        font-size: 6rem;
+                    }
+                    
+                    .letter:nth-of-type(1) {
+                        animation-delay: -0.083333333s;
+                    }
+                    .letter:nth-of-type(2) {
+                        animation-delay: 0.0833333333s;
+                    }
+                    .letter:nth-of-type(3) {
+                        animation-delay: 0.1666666667s;
+                    }
+                    .letter:nth-of-type(4) {
+                        animation-delay: 0.25s;
+                    }
+                    .letter:nth-of-type(5) {
+                        animation-delay: 0.3333333333s;
+                    }
+                    .letter:nth-of-type(6) {
+                        animation-delay: 0.4166666667s;
+                    }
+
+    #aboutMe {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1rem;
+        background-color: #00000080;
+    }
+
+        #aboutMe > img {
+            width: 400px;
+            border-radius: 10px 0 0 10px;
+        }
+
+        #aboutMetxt {
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            width: 600px;
+            background-color: #ffffff;
+            color: #000000;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 0 10px 10px 0;
+        }
+
+            #aboutMetxt > h1 {
+                font-size: 30px;
+                text-align: center;
+                letter-spacing: 2px;
+                text-shadow: 0 0 10px #00ffff;
+            }
+
+            #cv {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                background-color: #00ffff;
+                color: #000000  ;
+                width: 130px;
+                padding: 8px;
+                border-radius: 20px;
+                box-shadow: inset 0 0 10px #008888;
+                transition: all 1s;
+            }
+
+                #cv:hover {
+                    box-shadow: 0 0 10px #000000, 
+                                inset 0 0 10px #008888;
+                }
+
+    .title {
+        background-color: #000000;
+        box-shadow: inset 0 0 10px #00ffff;
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+        letter-spacing: 4px;
+    }
+
+    #skills {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        background-color: #00000080;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 190px;
+        height: 254px;
+        background-image: linear-gradient(163deg, 
+                                        #00ff75 0%, 
+                                        #3700ff 100%);
+        border-radius: 20px;
+        transition: all 1s;
+    }
+       
+        .border {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 190px;
+            height: 254px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            transition: all .2s;
+            overflow: hidden;
+        }
+       
+            .border:hover {
+                transform: scale(0.98);
+                border-radius: 20px;
+            }
+            
+            .card:hover {
+                box-shadow: 0 0 30px 1px #00ff754d;
+            }
+
+        .ofImg {
+            padding: 1rem;
+            height: 60%;
+            display: flex;
+            align-items: center;
+        }
+
+            .ofImg > img {
+                width: 100%;
+                border-radius: 20px;
+                
+            }
+
+        .foodCardskills {
+            text-align: center;
+            height: 10%;
+            padding: 1rem;
+            letter-spacing: 1px;
+        }
+
+    #proyects {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        background-color: #00000080;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+        #proyects > a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .cardProyect {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 220px;
+            height: 315px;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 15px 15px 30px #191919,
+                        -15px -15px 30px #292929;
+        }
+
+            .cardProyect:hover {
+                border: solid 1px #00ffff;
+                box-shadow: inset 0 0 20px #000000;
+            }
+
+
+@keyframes bounce {
+    0% {
+      transform: translate3d(0, 0, 0);
+      text-shadow: #7e7e7e 0 0 0.05em;
+    }
+    100% {
+      transform: translate3d(0, -1em, 0);
+      text-shadow: #7e7e7e 0 1em 0.35em;
+    }
+}
+
+            #greetingTXT > h2 {
+                padding: 8px;
+                background-color: #000000c0;
+                border-radius: 10px;
+                font-size: 35px;
+
+            }
+
+            #greetingTXT > h3 {
+                font-size: 25px;
+            }
+
+@media screen and (max-width: 960px) {
+        #greeting {
+            flex-direction: column;
+        }
+
+            #myFace {
+                width: 170px;
+            }
+
+    #aboutMe {
+        padding: 1rem;
+    }
+
+        #aboutMe > img {
+            display: none;
+        }
+        
+        #aboutMetxt {
+            border-radius: 10px;
+            background-color: #aaaaaa;
+            gap: 10px;
+        }
+
+}
+
+@media screen and (max-width: 600px) {
+            #greetingTXT {
+                align-items: center;
+                gap: 0;
+            }
+
+                #greetingTXT > h2 {
+                    font-size: 30px;
+                }
+
+                #aboutMetxt > h1 {
+                    font-size: 25px;
+                }
+
+                #aboutMetxt > p {
+                    font-size: 12px;
+                }
+            
+
+
+}

@@ -1,0 +1,53 @@
+#footerPage {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: inset  0 -2px 20px #008181;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+    #footerPage > h1 {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    #contactSpace {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+        .moveTo {
+            text-decoration: none;
+            color: #ffffff;
+            border: solid 1px #ffffff;
+            border-radius: 10px;
+        }
+
+        .moveTo:hover {
+            box-shadow: 0 0 10px #008181;
+        }
+
+            .contacts {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                padding: 6px 12px;
+            }
+
+                .contacts > img {
+                    width: 40px;
+                    border-radius: 50%;
+                }
+
+@media screen and (max-width: 420px) {
+    #contactSpace {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
