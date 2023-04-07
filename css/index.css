@@ -107,11 +107,13 @@ body {
                 width: 130px;
                 padding: 8px;
                 border-radius: 20px;
+                border: solid 0.5px #0d7777;
                 box-shadow: inset 0 0 10px #008888;
             }
 
                 #cv:hover {
-                    box-shadow: 0 0 10px #000000, inset 0 0 10px #008888;
+                    transform: translateY(-2px);
+                    box-shadow: 0 2px 8px #000000, inset 0 0 10px #008888;
                 }
 
     .title {
